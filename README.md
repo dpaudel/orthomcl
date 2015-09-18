@@ -33,3 +33,7 @@ http://proteomics.ysu.edu/tools/OrfPredictor.html
 http://proteomics.ysu.edu/tools/user_results/usr_FriSep181644132015/
 File to use: OrfPredictor.pep
 
+#Compliant fasta for clotault data
+orthomclAdjustFasta Pclotault ../clotault2012/protein_clotault2012orf.fasta 2
+
+
