@@ -36,4 +36,7 @@ File to use: OrfPredictor.pep
 #Compliant fasta for clotault data
 orthomclAdjustFasta Pclotault ../clotault2012/protein_clotault2012orf.fasta 2
 
-
+#Filtering
+orthomclFilterFasta compliantFasta 10 20
+grep ">" goodProteins.fasta | wc -l
+  #4312
