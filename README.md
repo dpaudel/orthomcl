@@ -40,3 +40,11 @@ orthomclAdjustFasta Pclotault ../clotault2012/protein_clotault2012orf.fasta 2
 orthomclFilterFasta compliantFasta 10 20
 grep ">" goodProteins.fasta | wc -l
   #4312
+
+#Make blast database
+ makeblastdb -in goodProteins.fasta -dbtype prot -parse_seqids -out goodProteins.fasta
+
+#Run all vs all blast (blastp.pbs)
+blastp -db goodProteins.fasta -query goodProteins.fasta -outfmt 6 -out blastresults.tsv -num_threads 8
+
+
