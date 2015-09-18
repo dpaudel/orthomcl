@@ -28,4 +28,8 @@ orthomclFilterFasta compliantFasta 10 20
 grep ">" goodProteins.fasta | wc -l
   #3581
 
+The nucleotide sequence from Clotault2012 were uploaded to ORFpredictor to get protein sequence
+http://proteomics.ysu.edu/tools/OrfPredictor.html
+http://proteomics.ysu.edu/tools/user_results/usr_FriSep181644132015/
+File to use: OrfPredictor.pep
 
