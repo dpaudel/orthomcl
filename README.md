@@ -19,6 +19,13 @@ orthomclAdjustFasta Pyano_hd3a ../yano2001/hd3a_monocots.fasta 2
 orthomclAdjustFasta Pyano_hd6 ../yano2001/hd6_monocots.fasta 2
 orthomclAdjustFasta Pyano_se5 ../yano2001/se5.fasta 2
 
+# Filterin sequences
+#Since all predicted proteins will be of different sizes, we need to perform a filtering step where we remove all proteins that are shorter than a specific length, so tat they won't interfere with the OrthoMCL analyses.
 
+cd ..
+orthomclFilterFasta compliantFasta 10 20
+# Here 10 is the minimum length for protein to keep and 20 is the maximum allowed stop codons in the sequences
+grep ">" goodProteins.fasta | wc -l
+  #3581
 
 
