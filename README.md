@@ -47,4 +47,5 @@ grep ">" goodProteins.fasta | wc -l
 #Run all vs all blast (blastp.pbs)
 blastp -db goodProteins.fasta -query goodProteins.fasta -outfmt 6 -out blastresults.tsv -num_threads 8
 
-
+#Parse blast results
+orthomclBlastParser blastresults.tsv ./complaintFasta/ >> similarSequences.txt
