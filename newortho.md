@@ -33,3 +33,6 @@ Check if database is created
 Give permission to sh file
 
 ```chmod +x *.*```
+
+Extract sequence
+```scripts/ExtractSeq.sh -o sequences named_sco_groups_1.5.txt goodProteins.fasta ```
