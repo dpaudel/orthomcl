@@ -22,3 +22,11 @@
  
 ``` orthomclAdjustFasta Psrikanth ../protein_srikanth2011.fasta 1 ```
  
+Create orthomcl database
+
+```hpc_create_orthomcl_database orthomcl_dpaudel_newortho```
+
+Check if database is created
+
+```hpc_list_orthomcl_databases```
+
