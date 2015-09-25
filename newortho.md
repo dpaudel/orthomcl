@@ -98,8 +98,12 @@ Looks like this command didnot work, So I am using awk to extract first columns 
 
 ``` awk '{print $1}' named_groups_1.5_frequency.txt > ids.txt ```
 
-```while read line; do grep -w "$line" named_groups_1.5.txt; done<ids.txt > named_sco_groups_1.5.txt``` #filtering group file
+Filtering group file
+
+```while read line; do grep -w "$line" named_groups_1.5.txt; done<ids.txt > named_sco_groups_1.5.txt```
 
 Extract sequence
 
 ```scripts/ExtractSeq.sh -o sequences named_sco_groups_1.5.txt goodProteins.fasta ```
+
+
