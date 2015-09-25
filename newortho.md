@@ -30,3 +30,6 @@ Check if database is created
 
 ```hpc_list_orthomcl_databases```
 
+Give permission to sh file
+
+```chmod +x *.*```
