@@ -106,4 +106,7 @@ Extract sequence
 
 ```scripts/ExtractSeq.sh -o sequences named_sco_groups_1.5.txt goodProteins.fasta ```
 
+Testing with different blast db
+ 
+ ```scripts/ExtractSeq.sh -o sequences3 named_sco_groups_1.5.txt blastdb2 ```
 
